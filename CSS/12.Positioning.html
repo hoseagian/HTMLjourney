@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Background Image</title> 
+        <style>
+            .blue{
+                background-color:rgb(107, 107, 178);
+                color:blue;
+                height: 100px;
+                width: auto;
+                /* positioning */
+                position: fixed;
+                top: 30px;
+                left: 30px;
+                z-index: 2;
+            }
+            .yellow{
+                color:rgb(5, 31, 142);
+                background-color:yellow;
+                height: 100px;
+                width: auto;
+                /* positioning */
+                position: relative;
+                top: 30px;
+                left: 30px;
+                z-index: 1;
+            }
+            
+            .green{
+                color:chartreuse;
+                background-color:green;
+                height: 100px;
+                width: auto;
+                /* positioning */
+                position:absolute;
+                top: 250px;
+                left: 500px;
+                z-index: 6;
+            }
+        </style>       
+    </head>
+    <body>
+        <!-- Div is a block of elements -->
+        <div class="blue"><p>Facebook is my </p></div>
+        <div class="yellow"><p>Apple</p></div>
+        <div class="green"><p>Microsoft</p></div>
+    </body>
+</html>
