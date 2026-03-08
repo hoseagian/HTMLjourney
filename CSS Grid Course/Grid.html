@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .grid-container{
-            height: 700px;
+            /* height: 700px; */
             display: grid;
             grid-template-columns: 300px 300px 300px ;
             /* grid-template-rows: 300px 300px 300px ; */ /*Tanpa perlu  atur row, sudah pake grid auto row*/
             grid-auto-rows: 300px;
+            grid-auto-flow: column;
             gap: 1em;
 
             justify-items: center; /*Horizontal align*/
@@ -44,6 +45,8 @@
         <div class="bagian">Bagian 9</div>
         <div class="bagian">Bagian 10</div>
         <div class="bagian">Bagian 11</div>
-    </div>
+        <div class="bagian">Bagian 12</div>
+        <div class="bagian">Bagian 13</div>
+  </div>
 </body>
 </html>
