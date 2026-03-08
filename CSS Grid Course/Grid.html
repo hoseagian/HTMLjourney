@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+
+        }
         .grid-container{
             display: grid;
-            grid-template-columns: 200px 200px 200px;
-            grid-template-rows: 200px 200px 200px;;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px 200px;
             gap: 1em;
+
+            grid-template-areas:
+            "box-1 box-1 box-2 box-2"
+            "box-3 box-3 box-3 box-4"
+            "box-5 box-5 box-5 box-5 ";
+
+
         }
         .grid-container .bagian{
-            background-color: brown;
+            background-color:blue;
             color: aliceblue;
-            text-align: center;
-            padding: 2em;
-            border-radius: 10px;
-            font-size: 1.5rem;
+            border-radius: 8px;
         }
     </style>
     <title>Grid Tutorial</title>
 </head>
 <body>
     <div class="grid-container">
-        <div class="bagian">Bagian 1</div>
-        <div class="bagian">Bagian 2</div>
-        <div class="bagian">Bagian 3</div>
-        <div class="bagian">Bagian 4</div>
-        <div class="bagian">Bagian 5</div>
-        <div class="bagian">Bagian 6</div>
-        <div class="bagian">Bagian 7</div>
-        <div class="bagian">Bagian 8</div>
-        <div class="bagian">Bagian 9</div>
-    </div>
+        <div class="bagian" style="grid-area: box-1">Bagian 1</div>
+        <div class="bagian" style="grid-area: box-2">Bagian 2</div>
+        <div class="bagian" style="grid-area: box-3">Bagian 3</div>
+        <div class="bagian" style="grid-area: box-4">Bagian 4</div>
+        <div class="bagian" style="grid-area: box-5">Bagian 5</div>
+        </div>
 </body>
 </html>
